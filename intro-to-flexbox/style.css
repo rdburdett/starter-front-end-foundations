@@ -25,7 +25,19 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
 }
 
 .item {
+  flex: 1;
+  margin: 30px;
+  border: 2px solid blue;
+}
+
+.item-double {
+  flex: 2;
+  margin: 30px;
+  border: 2px solid yellow;
 }
