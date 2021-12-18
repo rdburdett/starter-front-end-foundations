@@ -1,3 +1,37 @@
+
+/* General Styling with Mobile-First Emphasis */
+
+  body {
+    background-color: green;
+  }
+  
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+  
+  .group {
+    flex-direction: column;
+  }
+
+/* Groups and items (Desktop) */
+
+@media all and (min-width: 800px) {
+  body {
+    background-color: red;
+  }
+
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+} 
+
+
 main {
   padding: 20px 0;
 }
@@ -24,7 +58,6 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row;
   margin-bottom: 100px;
 }
 
