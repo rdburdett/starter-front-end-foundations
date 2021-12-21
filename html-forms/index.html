@@ -13,6 +13,91 @@
   </head>
 
   <body>
-    <main></main>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Shipping Information</legend>
+          <div>
+            <label for="first-name">First Name:</label>
+            <input 
+              id="first-name" 
+              type="text" 
+              name="name" 
+              placeholder="John"
+              />
+          </div>
+          <div>
+            <label for="last-name">Last Name:</label>
+            <input 
+              id="last-name" 
+              type="text" 
+              name="name" 
+              placeholder="Doe"
+              />
+          </div>
+          <div>
+            <label for="location">Zipcode:</label>
+            <input
+              id="location"
+              type="text"
+              name="zipcode"
+              autofocus="on"
+              placeholder="12345"
+              maxlength="5"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input 
+              id="email" 
+              type="text" 
+              name="email" 
+              placeholder="JohnDoe@mail.com"
+              />
+          </div>
+          <div>
+            <label for="phone">Phone #:</label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              placeholder="xxx-xxx-xxxx"
+            />
+          </div>
+          <div>
+            <label for="form-message">Your message:</label>
+            <textarea
+              id="form-message"
+              name="message"
+              autofocus="on"
+              required
+              maxlength="200"
+              placeholder="How can I help you?"
+            ></textarea>
+          </div>
+        
+          <div id="favorite-color">
+            <label for="favorite-color">Favorite Color:</label>
+            <div>
+              <label for="red">Red</label>
+              <input id="red" name="color" type="radio" value="red" />
+            </div>
+            <div>
+              <label for="blue">Blue</label>
+              <input id="blue" name="color" type="radio" value="blue" />
+            </div>
+            <div>
+              <label for="green">Green</label>
+              <input id="green" name="color" type="radio" value="green" />
+            </div>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
